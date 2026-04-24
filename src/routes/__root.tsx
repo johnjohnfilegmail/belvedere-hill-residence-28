@@ -29,20 +29,35 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Belvedere Hill Residence | Apartamento de Luxo no Caminho das Árvores — Salvador" },
+      {
+        name: "description",
+        content:
+          "Belvedere Hill Residence — 4 suítes, 210m² com gabinete e 4 vagas no Caminho das Árvores, Salvador. Apenas 2 unidades por andar, nascente total e clube privado completo.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Apartamento de luxo Salvador, Caminho das Árvores, 4 Suítes Salvador, Belvedere Hill, Alameda das Catabas, alto padrão Salvador",
+      },
+      { name: "author", content: "Grupo Azinunes" },
+      { property: "og:title", content: "Belvedere Hill Residence — A vida a seu Bel-Prazer" },
+      {
+        property: "og:description",
+        content:
+          "4 Suítes | 210m² com Gabinete | 4 Vagas | Torre única no bairro mais nobre de Salvador.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:locale", content: "pt_BR" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
     ],
   }),
   shellComponent: RootShell,
